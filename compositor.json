@@ -1,0 +1,75 @@
+{
+  "name": "chirsch/compositor.io",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "Compositor.io demo",
+  "branch": "",
+  "style": {
+    "name": "Swiss",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/SwissHeader",
+      "article": "article/SwissArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "heading": {
+      "fontWeight": 700,
+      "letterSpacing": "-0.01em"
+    },
+    "layout": {
+      "fluid": true
+    },
+    "colors": {
+      "text": "#000",
+      "background": "#fff",
+      "primary": "#05a",
+      "secondary": "#444",
+      "highlight": "#f30",
+      "border": "#ccc",
+      "muted": "#eee"
+    }
+  },
+  "content": [
+    {
+      "component": "header",
+      "heading": "compositor.io",
+      "subhead": "Demo of compositor.io",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "compositor.io: Demo of compositor.io",
+          "url": null
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "chirsch",
+          "repo": "compositor.io"
+        }
+      ],
+      "backgroundImage": "http://i.imgur.com/1kH8T3W.png"
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "<h1>Compositor.io Demo</h1>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/chirsch/compositor.io",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/chirsch",
+          "text": "chirsch"
+        }
+      ]
+    }
+  ]
+}
